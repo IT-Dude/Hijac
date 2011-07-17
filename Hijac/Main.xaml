@@ -9,11 +9,24 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
             <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
         
-        <Button Content="Hello World!" />
+        <!-- Column 0 -->
+        <Button Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"
+                Content="Toolbar" />
+        <Button Grid.Column="0" Grid.Row="1"
+                Content="Some stuff" />
+        <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3"
+                Content="Some bottom toolbar stuff" />
+        
+        <!-- Column 1 -->
+        <Button Grid.Column="1" Grid.Row="1"
+                Content="Main calendar view" />
+        <!-- Column 2 -->
+        <Button Grid.Column="2" Grid.Row="1"
+                Content="Some different view" />
     </Grid>
 </Window>
