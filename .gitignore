@@ -2,3 +2,4 @@
 *.suo
 /Hijac/bin
 /Hijac/obj
+/Hijac/Hijac.csproj.user
